@@ -47,7 +47,8 @@ const ToPredictSection = ({ setPredictedImage }) => {
     }
       
     async function uploadFile(file) {
-        let url = process.env.REACT_APP_API_ROUTE_PREDICT;
+        //let url = process.env.REACT_APP_API_ROUTE_PREDICT;
+        let url = "http://127.0.0.1:10000/predict";
         let formData = new FormData()
         formData.append('file', file)
         
